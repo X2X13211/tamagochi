@@ -1,1 +1,3 @@
-console.log("hello world!")
+let name = "";
+const age = 25;
+var isStudent = true;
