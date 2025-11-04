@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
+    <title>Tamagochi</title>
 </head>
 <body>
+    <div clas="container">
+        <h1>Xan</h1>
+        <p>Your virtual character</p>
+    </div>
     
+    <div class="rules">
+        <ul> 
+            <li>Xan needs regular care: feeding, sleeping and drinking</li>
+            <li>Keep an eye on the status indicators - if they drop to zero, Xan will get sick</li>
+            <li>Communicate with Xan - he responds to your messages</li>
+            <li>Xan has access to neural networks and search</li>
+        </ul>
+    </div>
+
+    <div class="tamagochi-area">
+        <div class="status_bar"> 
+
+            <h2>Hunger</h2>
+            <div class="bar_container"> 
+                <div class="bar hunger_bar" id="hungerBar"> 
+                </div>
+                <span id="hungerText">100%</span>
+            </div>
+
+            <h2>Sleep</h2>
+            <div class="bar_container"> 
+                <div class="bar sleeep_bar" id="sleepBar"> 
+                </div>
+                <span id="sleepText">100%</span>
+            </div>
+
+            <h2>Thirst</h2>
+            <div class="bar_container"> 
+                <div class="bar thirst_bar" id="thirstBar"> 
+                </div>
+                <span id="thirstText">100%</span>
+            </div>
+
+            <h2>Health</h2>
+            <div class="bar_container"> 
+                <div class="bar health_bar" id="healthBar"> 
+                </div>
+                <span id="healthText">100%</span>
+            </div>
+
+            <h2>Happiness</h2>
+            <div class="bar_container"> 
+                <div class="bar happiness_bar" id="happinessBar"> 
+                </div>
+                <span id="happinessText">100%</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="actions"> 
+
+        <button class="action-btn" onclick="feed()">Feed</button>
+        <button class="action-btn" onclick="sleep()">Sleep</button>
+        <button class="action-btn" onclick="drink()">Give a drink</button>
+        <button class="action-btn" onclick="heal()">Heal</button>
+        <button class="action-btn" onclick="play()">Play</button>
+
+    </div>
+
+    
+
+
 </body>
 </html>
